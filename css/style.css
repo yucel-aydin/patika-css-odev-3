@@ -6,17 +6,21 @@
   font-family: arial,sans-serif;
   font-size: 13px;
 }
-
+.headerli{
+  display: inline;
+  float: right;
+}
 .headerli a {
   display: block;
   color: black;
-  text-align: center;
+  text-align: right;
   padding: 5px 5px;
   text-decoration: none;
 }
 
 .headerli a:hover {
   text-decoration: underline;
+
 }
 
 .container {
