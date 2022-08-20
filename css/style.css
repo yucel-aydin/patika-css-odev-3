@@ -3,10 +3,11 @@
   margin: 10px;
   overflow: hidden;
   margin-right: 16px;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 13px;
 }
-.headerli{
+/*header iconlarını yan yana ve sağa yaslı yapmak için eklendi*/
+.headerli {
   display: inline;
   float: right;
 }
@@ -20,7 +21,6 @@
 
 .headerli a:hover {
   text-decoration: underline;
-
 }
 
 .container {
@@ -38,10 +38,11 @@
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
+  border-radius: 20px;
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .search {
@@ -68,7 +69,22 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   line-height: 24px;
   position: relative;
 }
+.mic-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
 
+.mic-img span {
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
 .input-enter {
   display: flex;
   flex: 1;
@@ -86,6 +102,8 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 }
 
 .input {
+  width: 480px; /*inputu arama alanı 480px yapıldı*/
+  border: none; /*inputun border ı kaldırıldı.*/
   margin: 0;
   padding: 0;
   color: rgba(0, 0, 0, 0.87);
@@ -117,7 +135,24 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   cursor: pointer;
   user-select: none;
 }
-
+/*button ortalama ve üst boşluk için eklendi*/
+.buttons {
+  text-align: center;
+  padding-top: 18px;
+}
+/*button font, border,color,height ve margin ayarları için eklendi*/
+.buttons button {
+  font-family: Arial;
+  font-size: 14px;
+  height:36px;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
+  margin-right: 10px;
+}
+/*button gölgeleri için eklendi*/
+.buttons button:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
 .feelinglucky {
   padding: 0 16px;
   line-height: 27px;
@@ -128,6 +163,8 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 }
 
 .footer {
+  background-color: #f2f2f2; /*footer arka plan rengi için eklendi*/
+  list-style: none; /*liste noktalarını kaldırmak için eklendi*/
   margin: 0;
   padding: 0;
   overflow: hidden;
